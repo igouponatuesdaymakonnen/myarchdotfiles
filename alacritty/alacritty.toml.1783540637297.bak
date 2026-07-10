@@ -1,0 +1,20 @@
+[general]
+live_config_reload = true
+[window]
+opacity = 0.7
+blur = false
+title = "you wouldn't guess"
+dynamic_title = true
+decorations_theme_variant = "None"
+[scrolling]
+history = 100000
+multiplier = 4
+[font]
+size = 12
+normal = { family = "Luxi Mono", style = "Regular" }
+bold = { family = "Luxi Mono", style = "Bold" }
+italic = { family = "Luxi Mono", style = "Oblique" }
+bold_italic = { family = "Luxi Mono", style = "Bold Oblique" }
+[colors]
+
+

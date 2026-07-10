@@ -1,0 +1,37 @@
+colors = { }
+import = [
+  "/usr/lib/node_modules/alacritty-themes/themes/Blood-Moon.toml"
+]
+
+[general]
+live_config_reload = true
+
+[window]
+opacity = 0.7
+blur = false
+title = "you wouldn't guess"
+dynamic_title = true
+decorations_theme_variant = "None"
+
+[scrolling]
+history = 100_000
+multiplier = 4
+
+[font]
+size = 12
+
+  [font.normal]
+  family = "Luxi Mono"
+  style = "Regular"
+
+  [font.bold]
+  family = "Luxi Mono"
+  style = "Bold"
+
+  [font.italic]
+  family = "Luxi Mono"
+  style = "Oblique"
+
+  [font.bold_italic]
+  family = "Luxi Mono"
+  style = "Bold Oblique"
