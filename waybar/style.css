@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family:Luxi Mono, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: Luxi Mono, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
 }
 
@@ -31,7 +31,6 @@ window#waybar.termite {
 
 window#waybar.chromium {
     background-color: transparent;
-    border: none;
 }
 
 button {
@@ -50,7 +49,7 @@ button:hover {
 
 /* you can set a style on hover for any module like this */
 #pulseaudio:hover {
-    background-color: #a37800;
+    background-color: #aaaaaa;
 }
 
 #workspaces button {
@@ -59,17 +58,13 @@ button:hover {
     color: #CC2946;
 }
 
-#workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#workspaces button.active, #workspaces button.active {
-    background-color: #64727D;
+#workspaces button.focused, #workspaces button.active {
+    background-color: transparent;
     box-shadow: inset 0 -3px #ffffff;
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    background-color: #aaaaaa;
 }
 
 #mode {
@@ -90,23 +85,13 @@ button:hover {
 #custom-media,
 #tray,
 #mode,
-#idle_inhibitor,
-#scratchpad,
-#power-profiles-daemon,
-#mpd {
-    padding: 0 10px;
-    color: #CC2946;
-}
 
 #window,
 #workspaces {
-    background: transparent;
+    background : transparent;
     margin: 0 4px;
 }
-#workspaces-button {
-	min-width: 0;
-	padding: 0 5px;
-}
+#workspaces-button
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
@@ -120,7 +105,6 @@ button:hover {
 
 #clock {
     background-color: transparent;
-    color: #CC2946;
 }
 
 #battery {
@@ -151,30 +135,6 @@ button:hover {
     animation-direction: alternate;
 }
 
-#power-profiles-daemon {
-    padding-right: 15px;
-}
-
-#power-profiles-daemon.performance {
-    background-color: transparent;
-    color: #CC2946;
-}
-
-#power-profiles-daemon.balanced {
-    background-color: transparent;
-    color: #CC2946;
-}
-
-#power-profiles-daemon.power-saver {
-    background-color: transparent;
-    color: #CC2946;
-}
-
-label:focus {
-    background-color: transparent;
-    color: #CC2946;
-}
-
 #cpu {
     background-color: transparent;
     color: #CC2946;
@@ -182,27 +142,18 @@ label:focus {
 
 #memory {
     background-color: transparent;
-    color: #CC2946;
 }
 
 #disk {
     background-color: transparent;
-    color: #CC2946;
-}
-
-#backlight {
-    background-color: transparent;
-    color: #CC2946;
 }
 
 #network {
     background-color: transparent;
-    color: #CC2946;
 }
 
 #network.disconnected {
-    background-color: #CC2946;
-    color: #CC2946;
+    background-color: transparent;
 }
 
 #pulseaudio {
@@ -222,7 +173,6 @@ label:focus {
 
 #wireplumber.muted {
     background-color: transparent;
-    color: #CC2946;
 }
 
 #custom-media {
@@ -233,27 +183,22 @@ label:focus {
 
 #custom-media.custom-spotify {
     background-color: transparent;
-    color: #CC2946;
 }
 
 #custom-media.custom-vlc {
     background-color: transparent;
-    color: #CC2946;
 }
 
 #temperature {
     background-color: transparent;
-    color: #CC2946;
 }
 
 #temperature.critical {
     background-color: transparent;
-    color: #CC2946;
 }
 
 #tray {
     background-color: transparent;
-    color: #CC2946;
 }
 
 #tray > .passive {
@@ -263,69 +208,14 @@ label:focus {
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
     background-color: transparent;
-    color: #CC2946;
-}
-
-#idle_inhibitor {
-    background-color: transparent;
-    color: #CC2946;
-}
-
-#idle_inhibitor.activated {
-    background-color: transparent;
-    color: #CC2946;
-}
-
-#mpd {
-    background-color: transparent;
-    color: #CC2946;
-}
-
-#mpd.disconnected {
-    background-color: transparent;
-    color: #CC2946;
-}
-
-#mpd.stopped {
-    background-color: transparent;
-    color: #CC2946;
-}
-
-#mpd.paused {
-    background-color: transparent;
-    color: #CC2946;
 }
 
 #language {
-    background: #00b093;
-    color: #740864;
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
-#keyboard-state {
-    background: #97e1ad;
-    color: #000000;
+    background: transparent;
+    color: #CC2946;
     padding: 0 0px;
-    margin: 0 5px;
+    margin: 0 0px;
     min-width: 16px;
-}
-
-#keyboard-state > label {
-    padding: 0 5px;
-}
-
-#keyboard-state > label.locked {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad.empty {
-	background-color: transparent;
 }
 
 #privacy {
@@ -338,13 +228,23 @@ label:focus {
 }
 
 #privacy-item.screenshare {
-    background-color: #CC2946;
+    background-color: transparent;
 }
 
 #privacy-item.audio-in {
-    background-color: #CC2946;
+    background-color: transparent;
 }
 
 #privacy-item.audio-out {
-    background-color: #CC2946;
+    background-color: transparent;
+}
+
+#privacy-item.location {
+    background-color: transparent;
+}
+
+#battery, #clock, #language, #network, #temperature, #battery, #wireplumber, #disk, #cpu, #memory, #pulseaudio, #backlight {
+    border-right: 0.5px solid #CC2946;
+    padding-right: 8px;
+    margin-right: 4px;
 }

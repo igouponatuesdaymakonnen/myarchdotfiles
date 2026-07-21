@@ -2,7 +2,7 @@
 live_config_reload = true
 
 [window]
-opacity = 0.7
+opacity = 0.5
 blur = false
 title = "you wouldn't guess"
 dynamic_title = true
@@ -13,7 +13,7 @@ history = 100_000
 multiplier = 4
 
 [font]
-size = 12
+size = 11
 
   [font.normal]
   family = "Luxi Mono"
